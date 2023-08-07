@@ -13,26 +13,26 @@ Exercises from https://launchschool.com/books/oo_ruby
 5. Override the to_s method to create a user friendly print out of your object.
 
 6. When running the following code
-~~~ruby
-class Person
-  attr_reader :name
-  def initialize(name)
-    @name = name
-  end
-end
+    ~~~ruby
+    class Person
+    attr_reader :name
+    def initialize(name)
+        @name = name
+    end
+    end
 
-bob = Person.new("Steve")
-bob.name = "Bob"
-~~~
+    bob = Person.new("Steve")
+    bob.name = "Bob"
+    ~~~
 
-We get the following error
+    We get the following error
 
-~~~ruby
-test.rb:9:in `<main>': undefined method `name=' for
-  #<Person:0x007fef41838a28 @name="Steve"> (NoMethodError)
-~~~
+    ~~~ruby
+    test.rb:9:in `<main>': undefined method `name=' for
+    #<Person:0x007fef41838a28 @name="Steve"> (NoMethodError)
+    ~~~
 
-Why do we get this error and how do we fix it?
+    Why do we get this error and how do we fix it?
 
 7. Create a superclass called Vehicle for your MyCar class to inherit from and move the behavior that isn't specific to the MyCar class to the superclass. Create a constant in your MyCar class that stores information about the vehicle that makes it different from other types of Vehicles.
     
@@ -50,23 +50,23 @@ Why do we get this error and how do we fix it?
 
 13. Create a class 'Student' with attributes name and grade. Do NOT make the grade getter public, so joe.grade will raise an error. Create a better_grade_than? method, that you can call like so...
 
-~~~ruby
-puts "Well done!" if joe.better_grade_than?(bob)
-~~~
+    ~~~ruby
+    puts "Well done!" if joe.better_grade_than?(bob)
+    ~~~
 
 14. Given the following code...
 
-~~~ruby
-bob = Person.new
-bob.hi
-~~~
+    ~~~ruby
+    bob = Person.new
+    bob.hi
+    ~~~
 
-And the corresponding error message...
+        And the corresponding error message...
 
-~~~ruby
-NoMethodError: private method `hi' called for #<Person:0x007ff61dbb79f0>
-from (irb):8
-from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
-~~~
+    ~~~ruby
+    NoMethodError: private method `hi' called for #<Person:0x007ff61dbb79f0>
+    from (irb):8
+    from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+    ~~~
 
-What is the problem and how would you go about fixing it?
+        What is the problem and how would you go about fixing it?
