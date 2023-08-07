@@ -60,8 +60,8 @@ Exercises from https://launchschool.com/books/oo_ruby
     bob = Person.new
     bob.hi
     ~~~
-
-        And the corresponding error message...
+    
+    And the corresponding error message...
 
     ~~~ruby
     NoMethodError: private method `hi' called for #<Person:0x007ff61dbb79f0>
@@ -69,4 +69,4 @@ Exercises from https://launchschool.com/books/oo_ruby
     from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
     ~~~
 
-        What is the problem and how would you go about fixing it?
+    What is the problem and how would you go about fixing it?
